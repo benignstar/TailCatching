@@ -33,15 +33,8 @@ public class GameRoomActivity extends AppCompatActivity {
                 room_name.setText("토론중");
                 AlertDialog.Builder color_assign = new AlertDialog.Builder(GameRoomActivity.this);
                 color_assign.setView(activity_colorassign);
-                Button color_assign_ok=(Button)colorAssign_View.findViewById(R.id.color_assign_okbut);
-
+                color_assign.setPositiveButton("확인", null);
                 color_assign.show();
-                color_assign_ok.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        finish();
-                    }
-                });
             }
         });
         back_Button.setOnClickListener(new View.OnClickListener() {
